@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.page {
+  position: relative;
+  width: 100%;
+  display: flex;
+  background: transparent;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  z-index: 99;
+}
+
+header .logo {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+header .links {
+  gap: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .links a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+header .links a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  border-radius: 10px;
+  background: #fff;
+  left: 0;
+  bottom: -10px;
+  transition: 0.4s ease;
+  transform-origin: left;
+  transform: scale(0);
+}
+
+header .links a:hover::after {
+  transform: scale(1);
+}
+
+.page-one, .page-two {
+  width: 50%;
+  height: 100vh;
+}
+
+.page .text h2 {
+  font-size: 2rem;
+}
+
+.page-one {
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 10px #595959;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-one .h1 {
+  display: grid;
+  gap: 20px;
+}
+
+.page-one .h1 h1 {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.page-one .h1 p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.page-one .input-box {
+  width: 80%;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 30rem;
+  overflow: hidden;
+}
+
+.page-one .input-box input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding-left: 20px;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+::placeholder {
+  font-size: 1.1rem;
+  color: #d5d5d5;
+}
+
+.btn {
+  display: flex;
+  gap: 20px;
+}
+
+.btn .learn, .btn .get {
+  width: 180px;
+  height: 50px;
+  background: #000;
+  border: none;
+  color: #fff;
+  border-radius: 30rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.btn .get {
+  border: 2px solid #fff;
+  background: transparent;
+}
+
+.page-two .three {
+  width: 90%;
+  margin: 70vh auto;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0));
+}
+
+.page-two .three .box {
+  width: 100%;
+  height: 20vh;
+  background: transparent;
+  border-radius: 20px;
+  background: url("img/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  border: none;
+}
+
+.page-two .three .item1 {
+  background: url("img/natural (2).jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.page-two .three .item2 {
+  background: url("img/natural (3).jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.page-two .three .item3 {
+  background: url("img/natural (4).jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.page-two .three .item4 {
+  background: url("img/natural (1).jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=output.css.map */
